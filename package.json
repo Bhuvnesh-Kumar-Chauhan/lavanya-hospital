@@ -1,0 +1,9 @@
+{
+  "name": "lavanya-hospital-website",
+  "version": "1.0.0",
+  "description": "Modern, responsive website starter for Lavanya Hospital, Kashipur",
+  "main": "server.js",
+  "scripts": { "start": "node server.js", "dev": "node server.js" },
+  "engines": { "node": ">=18" },
+  "dependencies": { "express": "^4.21.2" }
+}
