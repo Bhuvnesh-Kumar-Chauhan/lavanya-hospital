@@ -58,3 +58,14 @@
     }
   });
 })();
+document.querySelectorAll("[data-department]").forEach((link) => {
+  link.addEventListener("click", () => {
+    const departmentInput = document.querySelector(
+      '#appointmentForm [name="department"]'
+    );
+
+    if (departmentInput) {
+      departmentInput.value = link.dataset.department;
+    }
+  });
+});
