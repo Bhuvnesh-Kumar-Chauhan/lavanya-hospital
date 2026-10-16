@@ -6,7 +6,7 @@ window.HOSPITAL_CONFIG = {
   name: 'Lavanya Hospital',
   tagline: 'Care with compassion',
   phoneDisplay: 'Add hospital phone number',
-  phoneLink: '', // Example: '+911234567890' (include country code)
+  phoneLink: '917900259999', // Example: '+911234567890' (include country code)
   email: '', // Example: 'contact@yourhospital.com'
   address: 'Add complete hospital address, Kashipur, Uttarakhand',
   visitingHours: 'Please call to confirm consultation timings',
