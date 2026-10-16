@@ -5,7 +5,7 @@
     document.querySelectorAll(selector).forEach(el => { el.textContent = value; });
   };
   setText('[data-hospital-name]', config.name);
-  setText('[data-hospital-phone]', config.phoneDisplay);
+  // setText('[data-hospital-phone]', config.phoneDisplay);
   setText('[data-hospital-address]', config.address);
   setText('[data-visiting-hours]', config.visitingHours);
   setText('[data-hospital-email]', config.email || 'Hospital email to be updated');

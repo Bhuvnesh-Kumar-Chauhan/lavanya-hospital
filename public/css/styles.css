@@ -9,7 +9,7 @@
 ========================================== */
 
 .departments-section {
-  background: #f2f5ef;
+  background: #fff;
 }
 
 /* Same 3-column layout as Specialities */
@@ -210,3 +210,601 @@
     transform: none;
   }
 }
+.hero-proofs
+{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+/* ==========================================
+   LAVANYA HOSPITAL — PREMIUM FACILITIES
+   Matches existing website design system
+========================================== */
+
+.facilities-section {
+  background: #f5f3ec;
+}
+
+.facilities-header {
+  max-width: 760px;
+  margin-bottom: 43px;
+}
+
+.facilities-header h2 {
+  font-family: Manrope, sans-serif;
+  font-size: clamp(38px, 4.2vw, 54px);
+  font-weight: 600;
+  letter-spacing: -.065em;
+  line-height: 1.12;
+  color: var(--ink-deep);
+  margin: 20px 0 17px;
+}
+
+.facilities-header h2 em {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  color: var(--teal);
+  letter-spacing: -.075em;
+}
+
+.facilities-header .section-lead {
+  max-width: 650px;
+  font-size: 14px;
+  color: #647671;
+  line-height: 1.85;
+}
+
+/* 01. HIGHLIGHT CARDS */
+
+.facilities-grid-cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 15px;
+  margin-bottom: 95px;
+}
+
+.facility-card {
+  min-width: 0;
+  padding: 24px 22px;
+  background: #fff;
+  border: 1px solid #e6ebe4;
+  border-radius: 12px;
+  transition: transform .25s, box-shadow .25s;
+}
+
+.facility-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px #143e3010;
+}
+
+.facility-card-featured {
+  background: var(--teal-dark);
+  border-color: var(--teal-dark);
+}
+
+.facility-card-icon {
+  width: 43px;
+  height: 43px;
+  display: grid;
+  place-items: center;
+  border-radius: 11px;
+  background: var(--mint);
+  color: var(--teal);
+  font-size: 23px;
+}
+
+.facility-card-featured .facility-card-icon {
+  background: #ffffff18;
+  color: #c9ead8;
+}
+
+.facility-card-label {
+  display: block;
+  margin-top: 23px;
+  font-size: 8px;
+  line-height: 1.6;
+  font-weight: 700;
+  letter-spacing: .14em;
+  color: #82918a;
+}
+
+.facility-card-featured .facility-card-label {
+  color: #b9d8ca;
+}
+
+.facility-card h3 {
+  margin: 10px 0;
+  color: var(--ink);
+  font-family: Manrope, sans-serif;
+  font-size: clamp(28px, 3vw, 38px);
+  line-height: 1.2;
+  letter-spacing: -.055em;
+}
+
+.facility-card-featured h3 {
+  color: #fff;
+}
+
+.facility-card h3 small {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.facility-card p {
+  margin: 0;
+  font-size: 10px;
+  line-height: 1.85;
+  color: #7b8983;
+}
+
+.facility-card-featured p {
+  color: #d0e3d9;
+}
+
+/* 02. INPATIENT FACILITIES */
+
+.facilities-content-grid {
+  display: grid;
+  grid-template-columns: 1fr .9fr;
+  gap: 70px;
+  align-items: center;
+  margin-bottom: 95px;
+}
+
+.facilities-content {
+  min-width: 0;
+}
+
+.facilities-content > h3,
+.facility-category-heading h3 {
+  font-family: Manrope, sans-serif;
+  font-size: clamp(28px, 3.2vw, 39px);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -.055em;
+  color: var(--ink-deep);
+  margin: 19px 0 15px;
+}
+
+.facilities-content > p,
+.facility-category-heading > p {
+  font-size: 12px;
+  line-height: 1.9;
+  color: #75847d;
+}
+
+.facility-detail-list {
+  margin-top: 28px;
+  border-top: 1px solid var(--line);
+}
+
+.facility-detail-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 17px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.facility-detail-row .facility-icon {
+  width: 39px;
+  height: 39px;
+  border-radius: 10px;
+  background: #e1eee3;
+  display: grid;
+  place-items: center;
+  font-size: 19px;
+  color: var(--teal);
+  flex: 0 0 39px;
+}
+
+.facility-detail-copy {
+  min-width: 0;
+  flex: 1;
+}
+
+.facility-detail-copy h4 {
+  font-size: 12px;
+  font-weight: 700;
+  margin: 1px 0 5px;
+  color: var(--ink);
+}
+
+.facility-detail-copy p {
+  font-size: 10px;
+  line-height: 1.85;
+  color: #7b8983;
+  margin: 0;
+}
+
+.facility-meta {
+  display: inline-block;
+  margin-top: 9px;
+  color: var(--teal);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .025em;
+}
+
+/* 03. FACILITY IMAGE */
+
+.facilities-visual {
+  min-width: 0;
+  height: 470px;
+  position: relative;
+  border-radius: 150px 12px 12px 12px;
+  background: #dcebe1;
+}
+
+.facilities-visual > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+.facility-floating {
+  position: absolute;
+  left: -25px;
+  bottom: 27px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: max-content;
+  max-width: calc(100% + 5px);
+  padding: 16px 18px;
+  background: #fff;
+  border: 1px solid #edf0eb;
+  border-radius: 11px;
+  box-shadow: var(--shadow);
+}
+
+.facility-floating > span {
+  width: 37px;
+  height: 37px;
+  display: grid;
+  place-items: center;
+  flex: 0 0 37px;
+  border-radius: 50%;
+  background: #e1f2e5;
+  color: var(--teal);
+  font-size: 25px;
+}
+
+.facility-floating div {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+}
+
+.facility-floating strong {
+  font-size: 11px;
+  color: var(--ink);
+}
+
+.facility-floating small {
+  margin-top: 4px;
+  font-size: 9px;
+  line-height: 1.6;
+  color: #7c8983;
+}
+
+/* 04. CRITICAL CARE & DIAGNOSTICS */
+
+.facility-category {
+  margin-bottom: 85px;
+}
+
+.facility-category-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.facility-category-heading > div {
+  max-width: 600px;
+  min-width: 0;
+}
+
+.facility-category-heading > p {
+  max-width: 370px;
+  margin: 0 0 5px;
+}
+
+.facility-service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 15px;
+}
+
+.facility-service-card {
+  min-width: 0;
+  padding: 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #fff;
+  border: 1px solid #e6ebe4;
+  border-radius: 12px;
+  transition: transform .25s, box-shadow .25s;
+}
+
+.facility-service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px #143e3010;
+}
+
+.facility-service-card .facility-icon {
+  width: 43px;
+  height: 43px;
+  display: grid;
+  place-items: center;
+  flex: none;
+  margin-bottom: 18px;
+  border-radius: 50%;
+  background: #e0f2e8;
+  color: var(--teal);
+  font-size: 21px;
+}
+
+.facility-service-card:nth-child(6n + 2) .facility-icon {
+  background: #fbe8de;
+}
+
+.facility-service-card:nth-child(6n + 3) .facility-icon {
+  background: #e9e4f5;
+}
+
+.facility-service-card:nth-child(6n + 4) .facility-icon {
+  background: #f7efcb;
+}
+
+.facility-service-card:nth-child(6n + 5) .facility-icon {
+  background: #e0edf5;
+}
+
+.facility-service-card h4 {
+  margin: 0 0 9px;
+  color: var(--ink);
+  font-family: Manrope, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: -.025em;
+}
+
+.facility-service-number {
+  margin: 2px 0 11px;
+  color: var(--teal);
+  font-family: Manrope, sans-serif;
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: -.045em;
+}
+
+.facility-service-number small {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.facility-service-number.facility-number-pending {
+  font-size: 12px;
+  line-height: 1.7;
+  letter-spacing: 0;
+  color: #92764e;
+}
+
+.facility-service-card p {
+  margin: 0;
+  color: #7b8983;
+  font-size: 10px;
+  line-height: 1.9;
+}
+
+/* 05. DIAGNOSTICS GRID */
+
+.facility-diagnostics {
+  margin-bottom: 40px;
+}
+
+.facility-diagnostics-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+/* 06. VERIFICATION NOTICE */
+
+.facility-disclaimer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 17px 20px;
+  border-left: 2px solid #a7c8b2;
+  border-radius: 0 7px 7px 0;
+  background: #eaf0e9;
+  color: #687a70;
+  font-size: 9px;
+  line-height: 1.9;
+}
+
+/* ==========================================
+   RESPONSIVE — TABLETS
+========================================== */
+
+@media (max-width: 1000px) {
+  .facilities-grid-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin-bottom: 75px;
+  }
+
+  .facilities-content-grid {
+    gap: 40px;
+  }
+
+  .facilities-visual {
+    height: 410px;
+  }
+
+  .facility-category-heading {
+    display: block;
+  }
+
+  .facility-category-heading > p {
+    max-width: 600px;
+    margin-top: 12px;
+  }
+
+  .facility-diagnostics-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* ==========================================
+   RESPONSIVE — MOBILE
+========================================== */
+
+@media (max-width: 800px) {
+  .facilities-header {
+    margin-bottom: 32px;
+  }
+
+  .facilities-header h2 {
+    font-size: 43px;
+  }
+
+  .facilities-content-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    margin-bottom: 70px;
+  }
+
+  .facilities-content > h3,
+  .facility-category-heading h3 {
+    font-size: 32px;
+  }
+
+  .facilities-visual {
+    width: calc(100% - 20px);
+    height: 390px;
+    margin-left: 20px;
+  }
+
+  .facility-category {
+    margin-bottom: 65px;
+  }
+
+  .facility-service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .facility-service-card {
+    padding: 19px;
+  }
+
+  .facility-floating {
+    left: -20px;
+    bottom: 18px;
+  }
+}
+
+/* ==========================================
+   RESPONSIVE — SMALL MOBILE
+========================================== */
+
+@media (max-width: 440px) {
+  .facilities-header h2 {
+    font-size: 37px;
+  }
+
+  .facilities-grid-cards {
+    gap: 10px;
+    margin-bottom: 60px;
+  }
+
+  .facility-card {
+    padding: 18px 15px;
+  }
+
+  .facility-card h3 {
+    font-size: 29px;
+  }
+
+  .facility-card-label {
+    font-size: 7px;
+    letter-spacing: .1em;
+  }
+
+  .facility-card p {
+    font-size: 9px;
+  }
+
+  .facilities-content > h3,
+  .facility-category-heading h3 {
+    font-size: 28px;
+  }
+
+  .facilities-visual {
+    height: 330px;
+  }
+
+  .facility-floating {
+    left: -14px;
+    max-width: calc(100% + 4px);
+    padding: 13px;
+    gap: 9px;
+  }
+
+  .facility-floating strong {
+    font-size: 10px;
+  }
+
+  .facility-floating small {
+    font-size: 8px;
+  }
+
+  .facility-service-grid,
+  .facility-diagnostics-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .facility-service-card {
+    padding: 20px;
+  }
+
+  .facility-service-card h4 {
+    font-size: 15px;
+  }
+
+  .facility-disclaimer {
+    padding: 14px;
+    font-size: 9px;
+  }
+}
+
+/* ==========================================
+   ACCESSIBILITY — REDUCED MOTION
+========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .facility-card,
+  .facility-service-card {
+    transition: none;
+  }
+
+  .facility-card:hover,
+  .facility-service-card:hover {
+    transform: none;
+  }
+}
+
